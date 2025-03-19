@@ -1,17 +1,15 @@
 package com.example.demo.bean;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 
-@Table(name = "table_user")
+@Table(name = "User")
 @Entity
-public class UserData {
+public class UserResponse {
 
     @Id //主键Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //主键自增
     @Column(name = "user_id")
     private int id;
-    @NotBlank(message = "用户名不能为空") //去掉空格
     @Column(name = "user_name")
     private String name;
     @Column(name = "user_age")
@@ -19,10 +17,10 @@ public class UserData {
     @Column(name = "user_address")
     private String address;
 
-    public UserData() {
+    public UserResponse() {
     }
 
-    public UserData(int id, String name, int age, String address) {
+    public UserResponse(int id, String name, int age, String address) {
         this.id = id;
         this.name = name;
         this.age = age;
