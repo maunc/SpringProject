@@ -1,4 +1,4 @@
-package com.example.demo.bean;
+package com.maunc.spring.bean;
 
 import jakarta.persistence.*;
 

@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.maunc.spring.repository;
 
-import com.example.demo.bean.UserResponse;
+import com.maunc.spring.bean.UserResponse;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

@@ -1,7 +1,7 @@
-package com.example.demo.service.user;
+package com.maunc.spring.service.user;
 
-import com.example.demo.bean.UserResponse;
-import com.example.demo.repository.UserRepository;
+import com.maunc.spring.bean.UserResponse;
+import com.maunc.spring.repository.UserRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

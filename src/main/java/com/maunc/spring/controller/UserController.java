@@ -1,8 +1,8 @@
-package com.example.demo.controller;
+package com.maunc.spring.controller;
 
-import com.example.demo.base.BaseResponse;
-import com.example.demo.bean.UserResponse;
-import com.example.demo.service.user.UserService;
+import com.maunc.spring.base.BaseResponse;
+import com.maunc.spring.bean.UserResponse;
+import com.maunc.spring.service.user.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

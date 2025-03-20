@@ -1,4 +1,4 @@
-package com.example.demo.base;
+package com.maunc.spring.base;
 
 import org.springframework.http.HttpStatus;
 

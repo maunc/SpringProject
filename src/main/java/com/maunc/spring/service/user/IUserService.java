@@ -1,6 +1,6 @@
-package com.example.demo.service.user;
+package com.maunc.spring.service.user;
 
-import com.example.demo.bean.UserResponse;
+import com.maunc.spring.bean.UserResponse;
 
 import java.util.List;
 

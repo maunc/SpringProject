@@ -1,6 +1,6 @@
-package com.example.demo.exception;
+package com.maunc.spring.exception;
 
-import com.example.demo.base.BaseResponse;
+import com.maunc.spring.base.BaseResponse;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

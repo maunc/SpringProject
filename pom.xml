@@ -9,11 +9,13 @@
         <version>3.3.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
-    <description>demo</description>
+    <groupId>com.maunc</groupId>
+    <artifactId>spring</artifactId>
+    <version>0.0.1</version>
+    <name>MauncSpring</name>
+    <description>
+        this is manuc spring demo project
+    </description>
     <url/>
     <licenses>
         <license/>
@@ -69,6 +71,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
+        <!--配置jarName-->
+        <finalName>MauncSpring</finalName>
     </build>
 
 </project>
