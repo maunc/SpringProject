@@ -18,6 +18,10 @@ public class BaseResponse<T> {
         return new BaseResponse<>(data, HttpStatus.OK.value(), "success");
     }
 
+    public static <T> BaseResponse<T> error(String errorMessage) {
+        return new BaseResponse<>(null, HttpStatus.EXPECTATION_FAILED.value(), errorMessage);
+    }
+
     public T getData() {
         return data;
     }

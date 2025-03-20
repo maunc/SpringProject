@@ -23,14 +23,19 @@ public class UserController {
         return BaseResponse.success("add " + data.getName() + " success");
     }
 
-    //查询
     @GetMapping(value = "/queryAll")
+    public BaseResponse<List<UserResponse>> queryAllUser() {
+        return BaseResponse.success(userService.queryUserAll());
+    }
+
+    //查询
+    @GetMapping(value = "/queryByName")
     public BaseResponse<List<UserResponse>> getUser(@RequestParam(value = "userName") String name) {
-        return BaseResponse.success(userService.queryUser(name));
+        return BaseResponse.success(userService.queryUserByName(name));
     }
 
     //修改  对象的Body一个值也不能错   更改那个就修改Body的那个字段
-    @PutMapping(value = "/update")
+    @PutMapping(value = "/updateByUser")
     public BaseResponse<String> updateUser(@Validated @RequestBody UserResponse data) {
         userService.updateUser(data);
         return BaseResponse.success("update user success");

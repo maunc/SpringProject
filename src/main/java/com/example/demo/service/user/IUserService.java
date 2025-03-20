@@ -19,7 +19,9 @@ public interface IUserService {
      * @param name
      * @return
      */
-    List<UserResponse> queryUser(String name);
+    List<UserResponse> queryUserByName(String name);
+
+    List<UserResponse> queryUserAll();
 
     /**
      * 删除一个对象

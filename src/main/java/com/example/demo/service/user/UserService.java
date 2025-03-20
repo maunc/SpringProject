@@ -6,6 +6,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -23,8 +24,15 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public List<UserResponse> queryUser(String name) {
+    public List<UserResponse> queryUserByName(String name) {
         return userRepository.findByName(name);
+    }
+
+    @Override
+    public List<UserResponse> queryUserAll() {
+        List<UserResponse> newList = new ArrayList<>();
+        userRepository.findAll().forEach(newList::add);
+        return newList;
     }
 
     @Override
